@@ -10,4 +10,5 @@ public class GithubActionsApplication {
 		SpringApplication.run(GithubActionsApplication.class, args);
 	}
 
+	
 }
