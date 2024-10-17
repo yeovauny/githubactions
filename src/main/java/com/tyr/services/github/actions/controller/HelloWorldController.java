@@ -1,4 +1,4 @@
-package com.tyr.services.github_actions;
+package com.tyr.services.github.actions.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

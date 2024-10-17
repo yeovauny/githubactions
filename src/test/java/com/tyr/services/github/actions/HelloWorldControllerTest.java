@@ -1,5 +1,6 @@
-package com.tyr.services.github_actions;
+package com.tyr.services.github.actions;
 
+import com.tyr.services.github.actions.controller.HelloWorldController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
