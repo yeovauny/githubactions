@@ -1,4 +1,4 @@
-TICKET-this is a example of commit 
+TICKET-
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 #
@@ -6,8 +6,6 @@ TICKET-this is a example of commit
 # Your branch is up to date with 'origin/master'.
 #
 # Changes to be committed:
-#	renamed:    src/main/java/com/tyr/services/github_actions/GithubActionsApplication.java -> src/main/java/com/tyr/services/github/actions/GithubActionsApplication.java
-#	renamed:    src/main/java/com/tyr/services/github_actions/HelloWorldController.java -> src/main/java/com/tyr/services/github/actions/controller/HelloWorldController.java
-#	renamed:    src/test/java/com/tyr/services/github_actions/GithubActionsApplicationTests.java -> src/test/java/com/tyr/services/github/actions/GithubActionsApplicationTests.java
-#	renamed:    src/test/java/com/tyr/services/github_actions/HelloWorldControllerTest.java -> src/test/java/com/tyr/services/github/actions/HelloWorldControllerTest.java
+#	new file:   -m
+#	modified:   src/main/java/com/tyr/services/github/actions/GithubActionsApplication.java
 #

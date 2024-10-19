@@ -1,13 +1,39 @@
 # This is a simple workflow 
 
-name: 'GitHub Workflow Demo'
+name: 'A basic workflow'
 
 on: 
-  workflow_dispatch:
+  push:
+    branches: ["main"]
 
+  pull_request:
+    branches: ["main"]
+
+  
 jobs:
-  sayHello:
-    runs-on: 
+  build-app:
+    runs-on: ubuntu-lastest
+
     steps: 
-    - name: runscript-to-say-hello
-      run:  echo "Howdy GitHub Actions"
+    - uses: actions/checkout@V3
+    
+    - name: Run a one-line script
+      run: echo Hello,world!
+
+
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project
+
+  build-db:
+    needs: build-app
+    runs-on: windows-lastest
+    steps:
+      - run: echo "hello Windows"
+
+  package:
+    needs: [build-app, build-db]
+    runs-on: macos-latest
+    steps:
+      - run: echo "Hello MacOS"
